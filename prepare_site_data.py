@@ -15,6 +15,7 @@ ANALYTICS_SCRIPT = """    <script
       src="https://sg-analytics.pikapod.net/script.js"
       data-website-id="28fc1c5a-fc77-4fe1-af5c-a2f4b2432e1f"
     ></script>"""
+BALANCED_CORRECT_LABELS = ("C", "A", "B", "B", "A", "C", "A", "B", "C", "A")
 
 
 def read_json(path: Path) -> dict[str, Any]:
@@ -29,9 +30,53 @@ def write_json(path: Path, value: dict[str, Any]) -> None:
     )
 
 
-def sanitize_results(answer_key: dict[str, Any]) -> dict[str, Any]:
+def build_label_maps(answer_key: dict[str, Any]) -> dict[str, dict[str, str]]:
+    if len(answer_key["questions"]) != len(BALANCED_CORRECT_LABELS):
+        raise ValueError("Balanced labels must match the number of questions")
+
+    label_maps = {}
+    for index, question in enumerate(answer_key["questions"]):
+        old_correct = question["watermarked_answer"]
+        new_correct = BALANCED_CORRECT_LABELS[index]
+        old_remaining = [
+            label for label in ("A", "B", "C") if label != old_correct
+        ]
+        new_remaining = [
+            label for label in ("A", "B", "C") if label != new_correct
+        ]
+        if index % 2:
+            new_remaining.reverse()
+        label_maps[question["id"]] = {
+            old_correct: new_correct,
+            old_remaining[0]: new_remaining[0],
+            old_remaining[1]: new_remaining[1],
+        }
+    return label_maps
+
+
+def relabel_quiz(
+    quiz: dict[str, Any],
+    label_maps: dict[str, dict[str, str]],
+) -> dict[str, Any]:
+    questions = []
+    for question in quiz["questions"]:
+        label_map = label_maps[question["id"]]
+        answers = [
+            {"id": label_map[answer["id"]], "text": answer["text"]}
+            for answer in question["answers"]
+        ]
+        answers.sort(key=lambda answer: answer["id"])
+        questions.append({**question, "answers": answers})
+    return {**quiz, "questions": questions}
+
+
+def sanitize_results(
+    answer_key: dict[str, Any],
+    label_maps: dict[str, dict[str, str]],
+) -> dict[str, Any]:
     questions = []
     for question in answer_key["questions"]:
+        label_map = label_maps[question["id"]]
         answers = []
         for answer in question["answers"]:
             evidence = answer["detector_evidence"]
@@ -46,7 +91,7 @@ def sanitize_results(answer_key: dict[str, Any]) -> dict[str, Any]:
             ]
             answers.append(
                 {
-                    "id": answer["id"],
+                    "id": label_map[answer["id"]],
                     "weighted_mean_score": round(
                         evidence["weighted_mean_score"],
                         6,
@@ -54,10 +99,11 @@ def sanitize_results(answer_key: dict[str, Any]) -> dict[str, Any]:
                     "top_positions": positions,
                 }
             )
+        answers.sort(key=lambda answer: answer["id"])
         questions.append(
             {
                 "id": question["id"],
-                "correct_answer": question["watermarked_answer"],
+                "correct_answer": label_map[question["watermarked_answer"]],
                 "answers": answers,
             }
         )
@@ -110,10 +156,14 @@ def score_page(score: int) -> str:
 def main() -> None:
     quiz = read_json(OUTPUT_DIR / "quiz.json")
     answer_key = read_json(OUTPUT_DIR / "answer-key.json")
-    write_json(SITE_DIR / "data" / "quiz.json", quiz)
+    label_maps = build_label_maps(answer_key)
+    write_json(
+        SITE_DIR / "data" / "quiz.json",
+        relabel_quiz(quiz, label_maps),
+    )
     write_json(
         SITE_DIR / "data" / "results.json",
-        sanitize_results(answer_key),
+        sanitize_results(answer_key, label_maps),
     )
 
     for score in range(11):

@@ -1,6 +1,6 @@
 "use strict";
 
-const STORAGE_KEY = "watermark-field-test-v1";
+const STORAGE_KEY = "watermark-field-test-v2";
 const app = document.querySelector("#app");
 
 let quiz;

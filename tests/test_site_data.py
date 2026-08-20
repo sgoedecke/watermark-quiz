@@ -1,5 +1,6 @@
 import json
 import unittest
+from collections import Counter
 from pathlib import Path
 
 
@@ -42,6 +43,17 @@ class SiteDataTest(unittest.TestCase):
             result_labels = {answer["id"] for answer in result["answers"]}
             self.assertEqual(result_labels, public_labels)
             self.assertIn(result["correct_answer"], public_labels)
+            highest_score = max(
+                result["answers"],
+                key=lambda answer: answer["weighted_mean_score"],
+            )
+            self.assertEqual(highest_score["id"], result["correct_answer"])
+
+        correct_positions = Counter(
+            question["correct_answer"]
+            for question in self.results["questions"]
+        )
+        self.assertEqual(correct_positions, {"A": 4, "B": 3, "C": 3})
 
     def test_public_quiz_schema_contains_no_private_metadata(self):
         self.assertEqual(
