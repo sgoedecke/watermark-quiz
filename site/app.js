@@ -128,9 +128,10 @@ function renderIntro() {
         Can you spot the <em>watermark?</em>
       </h1>
       <p class="lede">
-        You will read three responses to each prompt. All thirty were produced
-        by the same Qwen model; exactly one response in each set was generated
-        with SynthID.
+        This quiz contains ten prompts with three responses each. One of those
+        three responses was generated with the
+        <a href="https://deepmind.google/technologies/synthid/">SynthID</a>
+        text watermark. Can you guess which?
       </p>
       <div class="intro-actions">
         <button class="button button--primary" id="start-quiz" type="button">

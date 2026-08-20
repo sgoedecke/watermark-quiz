@@ -140,6 +140,14 @@ class SiteDataTest(unittest.TestCase):
             self.assertNotIn(removed_text, app)
         self.assertIn("renderReviewQuestion", app)
         self.assertIn("review-page", app)
+        self.assertIn(
+            'href="https://deepmind.google/technologies/synthid/"',
+            app,
+        )
+        self.assertIn(
+            "This quiz contains ten prompts with three responses each.",
+            app,
+        )
 
 
 if __name__ == "__main__":
