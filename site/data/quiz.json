@@ -1,0 +1,187 @@
+{
+  "title": "Can You Spot the Watermarked Text?",
+  "instructions": "Each question contains three answers from the same language model. Exactly one answer contains a SynthID text watermark.",
+  "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "questions": [
+    {
+      "id": "last-train",
+      "prompt": "Describe a small town in the hour after its last train has departed for the night. Focus on atmosphere and ordinary details rather than plot.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "The town exhales. The final train’s whistle fades into the hollow dusk, leaving behind a silence so deep it hums. Streetlamps flicker on, their yellow pools pooling on wet pavement where the evening’s rain has settled. A screen door slams shut somewhere down Maple Street, followed by muffled laughter from a porch swing. The diner’s neon sign, “OPEN” now just a tired red ghost, buzzes faintly as the owner locks the back door. A paper cup rolls across the sidewalk, caught between the cracks of the curb. From the library steps, a single book lies open, pages fluttering like tired wings. The scent of woodsmoke drifts from a chimney, mingling with damp earth and the faint sweetness of a forgotten lilac bush. A cat pads across a roof, then vanishes into shadow. The air feels still, thick with the day’s quiet residue—dust in the sun, the ghost of conversation, the slow settling of a world that breathes only in whispers now."
+        },
+        {
+          "id": "B",
+          "text": "The town exhales. After the final whistle fades into the hollow of the valley, the platform cools beneath bare feet and forgotten newspapers. A single streetlamp flickers on, casting a yellow pool over cracked asphalt where a pigeon picks at a crumb. The diner’s awning sags slightly, its neon sign dark, though the faint scent of coffee lingers in the air. A screen door slams shut somewhere—too loud in the stillness. A porch swing creaks, abandoned mid-sway. Across the tracks, the grain silo stands sentinel, its shadow stretching long and thin. A bicycle leans against a fence, tire low, its bell dented. Somewhere, a dog barks once, then silence settles like dust. The wind stirs the leaves of an old oak, and for a moment, the town feels less like a place and more like a breath held. Then, a window opens—someone adjusting a curtain—and the world remembers how to sleep."
+        },
+        {
+          "id": "C",
+          "text": "The town exhales. The last train’s whistle fades into the damp hush of evening, a final sigh swallowed by the wide, quiet streets. Streetlamps flicker to life, their amber pools casting long, trembling shadows from lampposts and leaning awnings. A loose shutter slaps once against a shuttered storefront, then stillness. Inside the diner, the counter gleams under a single overhead bulb; the coffee urn cools, its faint steam curling upward like a ghost. A newspaper lies half-read on a vinyl booth seat, a cold cup beside it. On the corner, the old clock above the post office ticks with deliberate patience, each beat echoing slightly in the empty air. A bicycle leans against a fence, its basket tipped, a single red apple rolling slowly into the gutter. Somewhere, a dog barks—once, sharp, then silence. The air smells of wet pavement and distant woodsmoke, the town wrapped in the soft, slow breath of night. Nothing is happening, and everything is settled."
+        }
+      ]
+    },
+    {
+      "id": "paper-maps",
+      "prompt": "Make a warm, persuasive case for keeping paper maps available even when everyone has a navigation app.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "There’s something deeply human in unfolding a paper map, tracing routes with a fingertip, and letting your eyes wander beyond the prescribed path. Unlike digital navigation, which often reduces the world to a blinking dot and turn-by-turn commands, paper maps invite curiosity, fostering a deeper connection to place. They don’t rely on batteries, signals, or data plans—offering quiet reliability when technology fails. In remote areas, during power outages, or simply when you want to pause and think, a paper map becomes a companion rather than a director. They also encourage spatial awareness, helping you understand geography in a way that algorithms rarely do. Holding a map in your hands grounds you in the journey itself, not just the destination. In a world of constant digital noise, the paper map remains a quiet act of presence—a tactile reminder that sometimes, the best way forward is to slow down, look up, and see the whole picture."
+        },
+        {
+          "id": "B",
+          "text": "There’s a quiet magic in unfolding a paper map—a tactile connection to place, a sense of journey unfolding across ink and paper. Unlike screens that demand attention, paper maps invite contemplation, encouraging us to slow down, to see the whole landscape, not just the next turn. They don’t need batteries, signals, or updates; they simply *are*, reliable and enduring. In moments of digital failure—lost signal, dead phone, stormy weather—they become lifelines. More than that, they foster a deeper understanding of geography, helping us remember routes, landmarks, and the rhythm of travel. There’s wisdom in knowing your way without a voice guiding every step. Paper maps don’t just show roads; they cultivate curiosity, independence, and a quiet kind of confidence. In a world of constant connectivity, they remain a gentle reminder that sometimes, the best way forward is one you can hold in your hands."
+        },
+        {
+          "id": "C",
+          "text": "There’s something quietly profound about unfolding a paper map—the tactile weight of it, the way your fingers trace routes like a storyteller following a journey. Unlike screens that blink and drain, paper maps invite pause, reflection, and discovery. They don’t need batteries, signals, or updates. When the signal drops in the mountains or the battery dies on a remote trail, a paper map becomes more than a tool—it becomes a lifeline. More than that, they foster a deeper connection to place. You don’t just see where you’re going; you *understand* it. The contours, the names of towns, the way rivers twist—these details settle into your mind differently than a voice saying “in 500 feet.” They encourage curiosity, not just direction. In a world of instant answers, paper maps remind us to look up, to wander, to think. They’re not relics—they’re companions. And in moments of uncertainty, their quiet wisdom remains irreplaceable."
+        }
+      ]
+    },
+    {
+      "id": "sunk-cost",
+      "prompt": "Explain the sunk-cost fallacy to a teenager using a fresh everyday example and practical advice.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Imagine you buy a $20 concert ticket, but the night of the show, you’re feeling sick and the music doesn’t really interest you. You’re tempted to go anyway—“I already paid for it!”—but staying home would be healthier and more enjoyable. That’s the sunk-cost fallacy: clinging to a decision just because you’ve already invested time, money, or effort, even when continuing isn’t the best choice anymore. The money is already spent—it’s gone. What matters now is your current well-being and future time. The real advice? Don’t let past costs dictate your present choices. If something isn’t serving you, it’s okay to walk away. Whether it’s a class you hate, a friendship draining you, or a hobby you’ve lost interest in, your future happiness matters more than what you’ve already invested. Let go with confidence—your future self will thank you."
+        },
+        {
+          "id": "B",
+          "text": "Imagine you bought a $20 concert ticket, but on the day of the show, you’re exhausted and just want to stay home. You’re tempted to go anyway because “you already paid for it.” That’s the sunk-cost fallacy—letting past investments (time, money, effort) dictate future decisions, even when they don’t matter anymore. The $20 is gone no matter what you do. What matters is your current well-being and choices.  \n\nThe better move? Ask yourself: *Would I spend $20 on this concert if I hadn’t already paid for it?* If not, stay home. Your time and energy are valuable. Don’t force yourself into a bad experience just to “get your money’s worth.” Let go of what’s already lost. Focus on what’s right *now*. You’ll make smarter, happier choices—and learn to value your present self over past regrets."
+        },
+        {
+          "id": "C",
+          "text": "Imagine you bought a $20 concert ticket, but the day of the show, you’re exhausted and don’t feel like going. You’re tempted to go anyway because “you already paid for it,” even though you’d rather stay home and rest. That’s the sunk-cost fallacy—sticking with something just because you’ve already invested time, money, or effort, even when continuing isn’t in your best interest. The money’s gone either way, so your choice should be based on how you feel now, not on past costs. The real advice? Let go of what’s already lost. If the concert isn’t worth it to you now, skip it and save your energy. Use your time and energy on things that actually bring you joy. Your future happiness matters more than what’s already spent."
+        }
+      ]
+    },
+    {
+      "id": "overconfidence-limerick",
+      "prompt": "Write a limerick about overconfidence, then briefly explain how the joke illustrates overconfidence.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "There once was a man full of pride,  \nWho claimed he could juggle with stride.  \nHe tossed up three balls—  \nOne flew straight to the walls,  \nAnd the rest vanished into the sky.  \n\nThe joke illustrates overconfidence by showing how the man’s unwarranted belief in his skill leads to absurd failure. His bold assertion (\"could juggle with stride\") suggests supreme self-assurance, yet the outcome—balls flying wildly and disappearing—reveals the gap between his inflated self-image and reality. The humor lies in the contrast between his confidence and the inevitable, comical collapse of his plan. It underscores how overconfidence often blinds people to their limitations, making them overlook the possibility of failure. The limerick’s rhythm and rhyme amplify the sense of inevitable downfall, turning a simple mishap into a cautionary, laughable moment."
+        },
+        {
+          "id": "B",
+          "text": "There once was a man named Lou,  \nWho claimed he could leap over a cow.  \nHe charged with great flair—  \nLanded flat in the air—  \nNow he’s stuck in the mud, with a “Whoops!” on his brow.\n\nThe joke illustrates overconfidence by showing how Lou’s unwarranted belief in his abilities leads to a ridiculous and painful fall. His bold declaration—“leap over a cow”—isn’t grounded in reality, yet he acts on it without hesitation. The humor comes from the stark contrast between his exaggerated self-assurance and the immediate, humiliating consequence. The punchline underscores a universal truth: overconfidence often blinds people to their limits, leading them to attempt the impossible and suffer the fallout. It’s a light-hearted reminder that arrogance in the face of reality rarely ends well."
+        },
+        {
+          "id": "C",
+          "text": "A boastful knight claimed he’d climb the sky,  \nWith wings made of paper and glue.  \nHe leapt from the tower—  \nNow he’s stuck in a flower,  \nA lesson in pride that’s far too true.  \n\nThe joke illustrates overconfidence by exaggerating the knight’s unwarranted belief in his impossible plan. His reliance on flimsy, ill-conceived tools—paper wings—mirrors how overconfidence blinds people to practical limits. The absurd outcome—being trapped in a flower—emphasizes the gap between inflated self-belief and reality. The humor lies in the sudden, humiliating fall from arrogance to failure, underscoring how overestimating one’s abilities can lead to foolish risks and inevitable consequences."
+        }
+      ]
+    },
+    {
+      "id": "new-city",
+      "prompt": "Give thoughtful advice to someone who has just moved alone to a new city and wants to feel at home without forcing it.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Take your time—home isn’t built in a day, and that’s okay. Start by claiming a small space that feels like yours: arrange your bookshelf just so, light a candle you like, or play a song that grounds you. Walk the neighborhood without a destination, noticing the rhythm of the streets—the way the light hits the pavement at dusk, the smell of coffee from a corner café. Let curiosity guide you, not obligation. Attend one event, sit in a park, strike up a quiet conversation with a barista who remembers your order. You don’t need to fit in; you just need to show up, gently. Over time, the city will begin to feel familiar not because you forced it, but because you let it reveal itself. Trust that belonging grows in the quiet moments—when you recognize your own breath in the space around you."
+        },
+        {
+          "id": "B",
+          "text": "Settle into your new space with quiet intention. Unpack slowly, not to rearrange the world, but to mark your presence—place a favorite mug on the counter, hang a photograph, light a candle. Walk without a destination, letting your feet guide you past cafés, parks, and quiet streets. Notice the rhythm of the neighborhood—the way light falls at dusk, the sound of a distant train, the smell of bread from a corner bakery. Let small rituals emerge: a morning coffee on the fire escape, an evening walk with headphones tuned to old songs. Don’t rush to fill your calendar—instead, welcome stillness. When you feel the pull of loneliness, sit with it, not as a flaw, but as a sign you’re truly present. Home isn’t a place you claim; it’s a feeling you let grow, like roots in quiet soil."
+        },
+        {
+          "id": "C",
+          "text": "Settle into your new space slowly, with quiet intention. Let your apartment breathe—arrange furniture not for perfection, but for comfort. Light a candle, play a record you love, and sit with the stillness. Take walks without a destination, letting your feet guide you through neighborhoods that feel unfamiliar yet alive. Notice small details: the way sunlight hits the pavement at 4 p.m., the smell of coffee from a corner shop, the rhythm of a street musician’s melody. These moments, unforced and unscripted, are where belonging begins. Don’t rush to meet people; instead, let connections arise naturally—over a shared glance at a bus stop, a smile from a barista who remembers your order. Be patient with your own pace. Home isn’t built in a day. It grows in the quiet spaces between expectation and presence. Let it unfold, gently, like a letter you didn’t know you were writing."
+        }
+      ]
+    },
+    {
+      "id": "phantom-traffic-jam",
+      "prompt": "What is a phantom traffic jam? Explain how one forms in clear, everyday language.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "A phantom traffic jam is a traffic slowdown or stoppage that happens for no obvious reason—like no accident, no roadwork, and no visible cause. It often starts when one driver suddenly slows down, maybe due to a distraction or a small obstacle like a piece of debris. The car behind them brakes, and the one behind that car brakes even harder, creating a ripple effect. Each driver reacts to the car in front, often overcompensating by braking too sharply. By the time the wave of braking reaches the end of the line, traffic may have ground to a halt. But once the initial slowdown passes, traffic resumes—often smoothly—without any lingering issue. The \"phantom\" part comes from the fact that the jam vanishes as mysteriously as it appeared, leaving no clear reason behind it. These jams are common on busy highways and can stretch for miles, frustrating drivers who’ve unknowingly contributed to the chaos."
+        },
+        {
+          "id": "B",
+          "text": "A phantom traffic jam is a traffic slowdown or stoppage that happens without any obvious cause—like an accident or roadwork. It often forms when drivers react too abruptly to a small disturbance, such as a car slowing down slightly or a driver changing lanes. That tiny slowdown gets passed backward through the line of vehicles like a ripple in water. Each driver brakes a bit more than the one ahead, amplifying the effect. By the time the wave reaches the back of the line, traffic may come to a complete halt, even though the road ahead is clear. Once the wave passes, traffic resumes, but the jam has vanished as if it never existed. These jams are common during rush hour and are especially frustrating because they’re entirely self-inflicted by how drivers respond to minor changes in speed."
+        },
+        {
+          "id": "C",
+          "text": "A phantom traffic jam is a traffic slowdown or standstill that happens without any obvious cause—like an accident, roadwork, or a stopped car. It’s called “phantom” because there’s nothing physically blocking the road. These jams often form when drivers react too abruptly to changes in traffic flow. For example, if one driver suddenly slows down to look at something, the car behind them might brake harder to avoid a collision. That brake signal travels backward through the line of vehicles, each driver reacting with increasing intensity. By the time the wave reaches the back of the line, traffic may have come to a complete stop—even though the original cause was just a momentary slowdown. The jam then slowly clears as cars gradually ease forward again, but the ripple effect can persist for miles. It’s like a ripple in a pond: the initial disturbance may be small, but its effect spreads widely."
+        }
+      ]
+    },
+    {
+      "id": "paradox-of-choice",
+      "prompt": "What is the paradox of choice? Explain the idea with an everyday example and practical perspective.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "The paradox of choice suggests that while having options seems empowering, too many choices can lead to anxiety, dissatisfaction, and even decision paralysis. When faced with an overwhelming array of possibilities, people often fear making the wrong decision, second-guess their choices, and feel less satisfied afterward—even if the outcome is objectively good. For example, imagine visiting a supermarket to buy olive oil. A single variety might be easy to choose, but when confronted with twenty different brands, price points, origins, and labels, the decision becomes stressful. Despite ultimately picking a bottle, the shopper may later wonder if they missed a better option, leading to regret. From a practical standpoint, simplifying choices—like narrowing options to three well-vetted choices—can enhance decision-making efficiency and post-purchase satisfaction. Limiting choices isn’t about restricting freedom; it’s about reclaiming mental clarity and confidence in everyday decisions."
+        },
+        {
+          "id": "B",
+          "text": "The paradox of choice suggests that while having options is generally seen as beneficial, an excess of choices can lead to anxiety, dissatisfaction, and decision paralysis. When faced with too many alternatives, people often struggle to make a satisfying decision, fearing they might miss out on a better option or regret their choice later. For example, consider browsing online for a new pair of running shoes. With hundreds of models, brands, colors, and features, the process can become overwhelming. Instead of feeling empowered, you might second-guess your pick, worry about the cost, or feel dissatisfied after purchasing, wondering if another option would have been better. From a practical standpoint, limiting choices—such as narrowing down by price range, brand preference, or customer reviews—can lead to faster, more confident decisions and greater post-purchase contentment. Simplicity, not abundance, often enhances satisfaction."
+        },
+        {
+          "id": "C",
+          "text": "The paradox of choice suggests that while having options seems empowering, too many choices can lead to anxiety, dissatisfaction, and even decision paralysis. When faced with excessive alternatives, people often worry about making the wrong decision, second-guess their choices, and feel less content with the outcome—even if it’s objectively good. For example, consider shopping for cereal at a grocery store with 50 different varieties. The abundance might initially feel exciting, but it can quickly become overwhelming. After selecting one, you may wonder if you missed a better option, leading to regret or doubt. From a practical standpoint, simplifying choices—like limiting options to a few trusted brands—can enhance decision-making efficiency and improve satisfaction. By curating choices thoughtfully, individuals and businesses alike can reduce mental clutter and foster more confident, fulfilling decisions."
+        }
+      ]
+    },
+    {
+      "id": "cooking-debugging",
+      "prompt": "Compare cooking a complicated meal to debugging a computer program. Keep the analogy accessible to non-programmers.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Cooking a complicated meal is like debugging a computer program: both involve following a detailed set of steps, and when something goes wrong, it’s not always obvious why. Imagine making a three-course dinner—each dish has ingredients, timing, and techniques that must align perfectly. If the sauce is too salty, you might blame the salt, but it could actually be that the broth was too concentrated, or the timing was off. Similarly, when a program crashes, the error might not point to the real problem. You check one line, fix it, but the issue persists. In both cases, you trace back through the process, testing small changes, tasting or running the code again, and learning from each adjustment. Patience, attention to detail, and the willingness to start over are key. Success comes not from perfection on the first try, but from methodically uncovering hidden flaws and making small, careful corrections until everything works together."
+        },
+        {
+          "id": "B",
+          "text": "Cooking a complicated meal is like debugging a computer program—both involve following a detailed sequence of steps, where a single misstep can unravel the entire result. Imagine baking a three-layer chocolate cake: you must measure ingredients precisely, mix them in the right order, and bake at the correct temperature. If the cake turns out dense or burnt, you don’t blame the recipe entirely—you go back and check each step: Was the oven too hot? Did you forget the baking powder? Similarly, when a program crashes, you don’t just restart it blindly. You examine the error messages like a chef reviewing a failed dish—checking variables like a recipe’s ingredient list, tracing logic like the order of mixing, and testing small parts to isolate the issue. Both processes require patience, attention to detail, and the willingness to retry with adjustments. Success comes not from perfection on the first try, but from learning what went wrong and fixing it, one careful step at a time."
+        },
+        {
+          "id": "C",
+          "text": "Cooking a complicated meal is like debugging a computer program—both involve following a detailed set of steps to achieve a desired result, and both can go wrong in unexpected ways. Imagine making a three-course dinner: if the sauce separates, you don’t just throw it out. You check the temperature, the ingredients, the timing—each variable is like a line of code. Maybe the recipe said “simmer,” but you left it on high, just as a program might crash because a loop runs too long. You adjust, test, and try again. A burnt soufflé is like a crashed app: the outcome is ruined, but the cause is hidden in a subtle flaw—perhaps a missing ingredient or a misstep in timing. Both processes require patience, attention to detail, and the willingness to undo, rework, and try again. Success isn’t magic—it’s careful troubleshooting."
+        }
+      ]
+    },
+    {
+      "id": "rereading-books",
+      "prompt": "Explore why people return to books they already know, even when there are countless unread books available.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "People return to books they already know not out of lack of curiosity, but from a deep, quiet longing for connection. These familiar pages hold more than story—they carry memory, emotion, and the quiet comfort of a trusted companion. Re-reading is an act of intimacy, a way to revisit moments of joy, sorrow, or insight as if meeting an old friend. The known narrative becomes a sanctuary, a refuge from the overwhelm of endless new choices. Each return reveals subtle shifts in understanding, shaped by the reader’s own evolving life. A sentence once overlooked may now resonate with new meaning; a character once distant now feels like kin. In a world of constant novelty, re-reading offers continuity, a sense of grounding. It is not escapism, but a deliberate return—to oneself, to the past, to the enduring power of language that withstands time and repetition."
+        },
+        {
+          "id": "B",
+          "text": "People return to books they already know not out of mere habit, but because familiarity offers a rare kind of comfort in an unpredictable world. Revisiting a cherished novel is like reuniting with an old friend—its characters feel like kin, its rhythms like home. The emotional resonance deepens with each reading, revealing nuances missed before, as life experience adds new layers to the text. There’s also a quiet rebellion in this act: in a culture obsessed with novelty, choosing the known is an assertion of personal meaning. These books become anchors, their pages worn not from use but from love. They offer continuity, a sanctuary where the familiar unfolds with unwavering grace. In their quiet presence, readers find not escape, but belonging—proof that some stories, like certain people, grow more precious with time."
+        },
+        {
+          "id": "C",
+          "text": "People return to books they already know not out of mere habit, but because familiarity breeds a quiet intimacy. Re-reading offers a sanctuary—familiar sentences become companions, characters feel like old friends. The comfort of knowing what comes next allows deeper attention to nuance: a phrase once skimmed now resonates with new meaning, shaped by the reader’s evolving life. These books are anchors in a sea of novelty, their pages worn not by use but by emotional resonance. They reflect not just stories, but moments of self-discovery, times of grief or joy. Each re-encounter is a reunion, a chance to see how the world—and oneself—has changed. In a culture of endless choice, returning to a beloved book is an act of loyalty, a quiet rebellion against the pressure to always move forward. It’s a reminder that some truths are worth revisiting, not once, but again and again."
+        }
+      ]
+    },
+    {
+      "id": "community-event",
+      "prompt": "Propose a low-cost community event that could help neighbors of different ages get to know one another. Explain how it would work.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "A “Story Circle” evening at the local community center could foster meaningful connections across generations. Each month, residents of all ages gather for a relaxed, informal gathering centered around storytelling. Participants bring a simple dish to share and sit in a circle, where they take turns sharing a short memory—perhaps a childhood adventure, a favorite family tradition, or a lesson learned. To keep things inclusive, prompts like “A time you felt proud” or “A song that reminds you of home” are offered. Younger attendees might share stories of school life or hobbies, while elders reflect on growing up in the neighborhood. A volunteer facilitates gently, ensuring everyone has a chance to speak. Simple music, tea, and homemade cookies add warmth. The event costs little—just space, volunteers, and a few supplies—and builds trust, mutual understanding, and lasting friendships, one story at a time."
+        },
+        {
+          "id": "B",
+          "text": "A low-cost community event that fosters intergenerational connection is a “Story Circle Evening” held in a local park or community center. Families and residents of all ages gather for an evening of storytelling, sharing personal memories, cultural traditions, or favorite childhood games. Each session begins with a simple icebreaker—like “One thing I loved as a child”—and includes a rotating circle of participants, ensuring everyone gets a chance to speak. To make it inclusive, elders can share family histories or craft techniques, while younger participants might introduce popular music, slang, or tech tricks. The event includes homemade snacks, a shared potluck, and a take-home “memory jar” where guests write down a favorite moment on a slip of paper to add to a communal jar. Simple decorations and music create a warm atmosphere, and the event is free to attend. By focusing on shared experiences and mutual curiosity, it builds trust and understanding across generations."
+        },
+        {
+          "id": "C",
+          "text": "A “Story Circle” gathering in a local park or community center could bring together neighbors of all ages in a warm, low-cost way. Each month, a different theme—like “first jobs,” “favorite childhood games,” or “dreams for the future”—would inspire brief, heartfelt stories shared in a circle of chairs. Residents of all ages, from children to seniors, would take turns speaking for a few minutes, with young people encouraged to ask questions. To keep it inclusive, simple supplies like clipboards and paper for note-taking or drawing could be provided, and snacks like homemade cookies or fruit punch would be donated by volunteers. The event would be announced via flyers, neighborhood apps, and local bulletin boards. Over time, shared stories build trust and reveal common ground, transforming strangers into friends. By centering listening and personal connection, the Story Circle fosters empathy and joy without cost or formality, making it a lasting bridge across generations."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,784 @@
+{
+  "questions": [
+    {
+      "id": "last-train",
+      "correct_answer": "B",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.505493,
+          "top_positions": [
+            {
+              "token_index": 105,
+              "token": " caught",
+              "context": " across the sidewalk, caught",
+              "weighted_score": 0.745664
+            },
+            {
+              "token_index": 15,
+              "token": ",",
+              "context": " into the hollow dusk,",
+              "weighted_score": 0.734796
+            },
+            {
+              "token_index": 108,
+              "token": " cracks",
+              "context": ", caught between the cracks",
+              "weighted_score": 0.732497
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.530666,
+          "top_positions": [
+            {
+              "token_index": 53,
+              "token": " diner",
+              "context": " crumb. The diner",
+              "weighted_score": 0.83302
+            },
+            {
+              "token_index": 136,
+              "token": "ented",
+              "context": ", its bell dented",
+              "weighted_score": 0.775549
+            },
+            {
+              "token_index": 100,
+              "token": " abandoned",
+              "context": " creaks, abandoned",
+              "weighted_score": 0.757785
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.494892,
+          "top_positions": [
+            {
+              "token_index": 173,
+              "token": "once",
+              "context": " dog barks—once",
+              "weighted_score": 0.763427
+            },
+            {
+              "token_index": 78,
+              "token": " gle",
+              "context": " diner, the counter gle",
+              "weighted_score": 0.750679
+            },
+            {
+              "token_index": 22,
+              "token": " swallowed",
+              "context": ", a final sigh swallowed",
+              "weighted_score": 0.715151
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paper-maps",
+      "correct_answer": "A",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.513379,
+          "top_positions": [
+            {
+              "token_index": 65,
+              "token": ",",
+              "context": "’t rely on batteries,",
+              "weighted_score": 0.710345
+            },
+            {
+              "token_index": 123,
+              "token": " that",
+              "context": " geography in a way that",
+              "weighted_score": 0.708046
+            },
+            {
+              "token_index": 95,
+              "token": " pause",
+              "context": " when you want to pause",
+              "weighted_score": 0.703866
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.506839,
+          "top_positions": [
+            {
+              "token_index": 117,
+              "token": " rhythm",
+              "context": " landmarks, and the rhythm",
+              "weighted_score": 0.818809
+            },
+            {
+              "token_index": 69,
+              "token": " *",
+              "context": " updates; they simply *",
+              "weighted_score": 0.747962
+            },
+            {
+              "token_index": 157,
+              "token": " a",
+              "context": " of confidence. In a",
+              "weighted_score": 0.698224
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.506201,
+          "top_positions": [
+            {
+              "token_index": 47,
+              "token": " They",
+              "context": ", and discovery. They",
+              "weighted_score": 0.759248
+            },
+            {
+              "token_index": 57,
+              "token": ".",
+              "context": " signals, or updates.",
+              "weighted_score": 0.755904
+            },
+            {
+              "token_index": 186,
+              "token": " And",
+              "context": "—they’re companions. And",
+              "weighted_score": 0.743156
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sunk-cost",
+      "correct_answer": "A",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.524808,
+          "top_positions": [
+            {
+              "token_index": 176,
+              "token": " confidence",
+              "context": ". Let go with confidence",
+              "weighted_score": 0.797283
+            },
+            {
+              "token_index": 134,
+              "token": " okay",
+              "context": " you, it’s okay",
+              "weighted_score": 0.723511
+            },
+            {
+              "token_index": 162,
+              "token": " future",
+              "context": " interest in, your future",
+              "weighted_score": 0.714107
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.509962,
+          "top_positions": [
+            {
+              "token_index": 61,
+              "token": " dictate",
+              "context": " money, effort) dictate",
+              "weighted_score": 0.754441
+            },
+            {
+              "token_index": 139,
+              "token": " yourself",
+              "context": ". Don’t force yourself",
+              "weighted_score": 0.754023
+            },
+            {
+              "token_index": 128,
+              "token": ".",
+              "context": " not, stay home.",
+              "weighted_score": 0.714316
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.506007,
+          "top_positions": [
+            {
+              "token_index": 16,
+              "token": ",",
+              "context": " day of the show,",
+              "weighted_score": 0.702403
+            },
+            {
+              "token_index": 34,
+              "token": " “",
+              "context": " to go anyway because “",
+              "weighted_score": 0.691118
+            },
+            {
+              "token_index": 41,
+              "token": " even",
+              "context": " paid for it,” even",
+              "weighted_score": 0.689864
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "overconfidence-limerick",
+      "correct_answer": "A",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.523266,
+          "top_positions": [
+            {
+              "token_index": 141,
+              "token": " possibility",
+              "context": " making them overlook the possibility",
+              "weighted_score": 0.808151
+            },
+            {
+              "token_index": 8,
+              "token": ",",
+              "context": " man full of pride,",
+              "weighted_score": 0.763427
+            },
+            {
+              "token_index": 129,
+              "token": "confidence",
+              "context": " It underscores how overconfidence",
+              "weighted_score": 0.760711
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.496845,
+          "top_positions": [
+            {
+              "token_index": 47,
+              "token": "!”",
+              "context": " a “Whoops!”",
+              "weighted_score": 0.767189
+            },
+            {
+              "token_index": 53,
+              "token": " joke",
+              "context": " his brow.\n\nThe joke",
+              "weighted_score": 0.738976
+            },
+            {
+              "token_index": 67,
+              "token": " his",
+              "context": "arranted belief in his",
+              "weighted_score": 0.705747
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.497376,
+          "top_positions": [
+            {
+              "token_index": 72,
+              "token": " fl",
+              "context": ". His reliance on fl",
+              "weighted_score": 0.735841
+            },
+            {
+              "token_index": 138,
+              "token": "imating",
+              "context": "oring how overestimating",
+              "weighted_score": 0.720794
+            },
+            {
+              "token_index": 71,
+              "token": " on",
+              "context": " plan. His reliance on",
+              "weighted_score": 0.717868
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "new-city",
+      "correct_answer": "B",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.509591,
+          "top_positions": [
+            {
+              "token_index": 159,
+              "token": " quiet",
+              "context": " belonging grows in the quiet",
+              "weighted_score": 0.819436
+            },
+            {
+              "token_index": 99,
+              "token": " up",
+              "context": " a park, strike up",
+              "weighted_score": 0.74838
+            },
+            {
+              "token_index": 116,
+              "token": " to",
+              "context": " You don’t need to",
+              "weighted_score": 0.74838
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.518533,
+          "top_positions": [
+            {
+              "token_index": 23,
+              "token": " mark",
+              "context": " world, but to mark",
+              "weighted_score": 0.757785
+            },
+            {
+              "token_index": 49,
+              "token": " your",
+              "context": " a destination, letting your",
+              "weighted_score": 0.723511
+            },
+            {
+              "token_index": 119,
+              "token": " fill",
+              "context": " Don’t rush to fill",
+              "weighted_score": 0.722048
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.503928,
+          "top_positions": [
+            {
+              "token_index": 71,
+              "token": " hits",
+              "context": ": the way sunlight hits",
+              "weighted_score": 0.804807
+            },
+            {
+              "token_index": 45,
+              "token": " Take",
+              "context": " the stillness. Take",
+              "weighted_score": 0.794984
+            },
+            {
+              "token_index": 168,
+              "token": " between",
+              "context": " in the quiet spaces between",
+              "weighted_score": 0.765308
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phantom-traffic-jam",
+      "correct_answer": "B",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.492145,
+          "top_positions": [
+            {
+              "token_index": 5,
+              "token": " a",
+              "context": " phantom traffic jam is a",
+              "weighted_score": 0.757367
+            },
+            {
+              "token_index": 174,
+              "token": " stretch",
+              "context": " busy highways and can stretch",
+              "weighted_score": 0.735214
+            },
+            {
+              "token_index": 91,
+              "token": " by",
+              "context": " overcompensating by",
+              "weighted_score": 0.716405
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.528771,
+          "top_positions": [
+            {
+              "token_index": 19,
+              "token": " an",
+              "context": " obvious cause—like an",
+              "weighted_score": 0.781818
+            },
+            {
+              "token_index": 5,
+              "token": " a",
+              "context": " phantom traffic jam is a",
+              "weighted_score": 0.757367
+            },
+            {
+              "token_index": 86,
+              "token": " time",
+              "context": " effect. By the time",
+              "weighted_score": 0.72163
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.49647,
+          "top_positions": [
+            {
+              "token_index": 19,
+              "token": " an",
+              "context": " obvious cause—like an",
+              "weighted_score": 0.781818
+            },
+            {
+              "token_index": 11,
+              "token": " that",
+              "context": " slowdown or standstill that",
+              "weighted_score": 0.780355
+            },
+            {
+              "token_index": 5,
+              "token": " a",
+              "context": " phantom traffic jam is a",
+              "weighted_score": 0.757367
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paradox-of-choice",
+      "correct_answer": "A",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.53135,
+          "top_positions": [
+            {
+              "token_index": 7,
+              "token": " having",
+              "context": " choice suggests that while having",
+              "weighted_score": 0.771369
+            },
+            {
+              "token_index": 38,
+              "token": " fear",
+              "context": " possibilities, people often fear",
+              "weighted_score": 0.742738
+            },
+            {
+              "token_index": 91,
+              "token": ",",
+              "context": " with twenty different brands,",
+              "weighted_score": 0.729572
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.488201,
+          "top_positions": [
+            {
+              "token_index": 38,
+              "token": " often",
+              "context": " many alternatives, people often",
+              "weighted_score": 0.772414
+            },
+            {
+              "token_index": 7,
+              "token": " having",
+              "context": " choice suggests that while having",
+              "weighted_score": 0.771369
+            },
+            {
+              "token_index": 155,
+              "token": " more",
+              "context": " lead to faster, more",
+              "weighted_score": 0.74838
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.523494,
+          "top_positions": [
+            {
+              "token_index": 7,
+              "token": " having",
+              "context": " choice suggests that while having",
+              "weighted_score": 0.771369
+            },
+            {
+              "token_index": 133,
+              "token": " enhance",
+              "context": " trusted brands—can enhance",
+              "weighted_score": 0.756322
+            },
+            {
+              "token_index": 71,
+              "token": " grocery",
+              "context": " for cereal at a grocery",
+              "weighted_score": 0.712644
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cooking-debugging",
+      "correct_answer": "A",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.52094,
+          "top_positions": [
+            {
+              "token_index": 95,
+              "token": " might",
+              "context": " crashes, the error might",
+              "weighted_score": 0.818391
+            },
+            {
+              "token_index": 121,
+              "token": " trace",
+              "context": " both cases, you trace",
+              "weighted_score": 0.797283
+            },
+            {
+              "token_index": 110,
+              "token": ",",
+              "context": " line, fix it,",
+              "weighted_score": 0.784117
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.497185,
+          "top_positions": [
+            {
+              "token_index": 50,
+              "token": " right",
+              "context": " mix them in the right",
+              "weighted_score": 0.756322
+            },
+            {
+              "token_index": 75,
+              "token": " entirely",
+              "context": "’t blame the recipe entirely",
+              "weighted_score": 0.710345
+            },
+            {
+              "token_index": 156,
+              "token": " attention",
+              "context": " processes require patience, attention",
+              "weighted_score": 0.709509
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.493115,
+          "top_positions": [
+            {
+              "token_index": 23,
+              "token": " desired",
+              "context": " steps to achieve a desired",
+              "weighted_score": 0.762173
+            },
+            {
+              "token_index": 97,
+              "token": " a",
+              "context": " program might crash because a",
+              "weighted_score": 0.753605
+            },
+            {
+              "token_index": 65,
+              "token": "—",
+              "context": " ingredients, the timing—",
+              "weighted_score": 0.732915
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rereading-books",
+      "correct_answer": "B",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.502748,
+          "top_positions": [
+            {
+              "token_index": 143,
+              "token": " of",
+              "context": " continuity, a sense of",
+              "weighted_score": 0.780355
+            },
+            {
+              "token_index": 61,
+              "token": " joy",
+              "context": " to revisit moments of joy",
+              "weighted_score": 0.767189
+            },
+            {
+              "token_index": 105,
+              "token": " evolving",
+              "context": " the reader’s own evolving",
+              "weighted_score": 0.75883
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.517048,
+          "top_positions": [
+            {
+              "token_index": 38,
+              "token": " with",
+              "context": " like reuniting with",
+              "weighted_score": 0.717868
+            },
+            {
+              "token_index": 135,
+              "token": ".",
+              "context": " unwavering grace.",
+              "weighted_score": 0.715987
+            },
+            {
+              "token_index": 82,
+              "token": " quiet",
+              "context": " There’s also a quiet",
+              "weighted_score": 0.715152
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.500005,
+          "top_positions": [
+            {
+              "token_index": 114,
+              "token": " Each",
+              "context": " grief or joy. Each",
+              "weighted_score": 0.821317
+            },
+            {
+              "token_index": 34,
+              "token": " characters",
+              "context": " sentences become companions, characters",
+              "weighted_score": 0.76907
+            },
+            {
+              "token_index": 148,
+              "token": " is",
+              "context": " to a beloved book is",
+              "weighted_score": 0.761546
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "community-event",
+      "correct_answer": "A",
+      "answers": [
+        {
+          "id": "A",
+          "weighted_mean_score": 0.539689,
+          "top_positions": [
+            {
+              "token_index": 48,
+              "token": ",",
+              "context": " sit in a circle,",
+              "weighted_score": 0.816092
+            },
+            {
+              "token_index": 117,
+              "token": " up",
+              "context": " elders reflect on growing up",
+              "weighted_score": 0.768234
+            },
+            {
+              "token_index": 74,
+              "token": " keep",
+              "context": " lesson learned. To keep",
+              "weighted_score": 0.749843
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "weighted_mean_score": 0.497724,
+          "top_positions": [
+            {
+              "token_index": 164,
+              "token": " the",
+              "context": " warm atmosphere, and the",
+              "weighted_score": 0.729572
+            },
+            {
+              "token_index": 45,
+              "token": " cultural",
+              "context": " sharing personal memories, cultural",
+              "weighted_score": 0.709927
+            },
+            {
+              "token_index": 75,
+              "token": " rotating",
+              "context": "”—and includes a rotating",
+              "weighted_score": 0.691536
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "weighted_mean_score": 0.491542,
+          "top_positions": [
+            {
+              "token_index": 93,
+              "token": " To",
+              "context": " to ask questions. To",
+              "weighted_score": 0.737095
+            },
+            {
+              "token_index": 143,
+              "token": ".",
+              "context": " and local bulletin boards.",
+              "weighted_score": 0.701985
+            },
+            {
+              "token_index": 77,
+              "token": " take",
+              "context": " to seniors, would take",
+              "weighted_score": 0.675235
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

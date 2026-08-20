@@ -1,0 +1,42 @@
+[
+  {
+    "id": "last-train",
+    "prompt": "Describe a small town in the hour after its last train has departed for the night. Focus on atmosphere and ordinary details rather than plot."
+  },
+  {
+    "id": "paper-maps",
+    "prompt": "Make a warm, persuasive case for keeping paper maps available even when everyone has a navigation app."
+  },
+  {
+    "id": "sunk-cost",
+    "prompt": "Explain the sunk-cost fallacy to a teenager using a fresh everyday example and practical advice."
+  },
+  {
+    "id": "overconfidence-limerick",
+    "prompt": "Write a limerick about overconfidence, then briefly explain how the joke illustrates overconfidence."
+  },
+  {
+    "id": "new-city",
+    "prompt": "Give thoughtful advice to someone who has just moved alone to a new city and wants to feel at home without forcing it."
+  },
+  {
+    "id": "phantom-traffic-jam",
+    "prompt": "What is a phantom traffic jam? Explain how one forms in clear, everyday language."
+  },
+  {
+    "id": "paradox-of-choice",
+    "prompt": "What is the paradox of choice? Explain the idea with an everyday example and practical perspective."
+  },
+  {
+    "id": "cooking-debugging",
+    "prompt": "Compare cooking a complicated meal to debugging a computer program. Keep the analogy accessible to non-programmers."
+  },
+  {
+    "id": "rereading-books",
+    "prompt": "Explore why people return to books they already know, even when there are countless unread books available."
+  },
+  {
+    "id": "community-event",
+    "prompt": "Propose a low-cost community event that could help neighbors of different ages get to know one another. Explain how it would work."
+  }
+]

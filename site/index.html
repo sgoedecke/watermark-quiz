@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="An informal blind quiz about spotting SynthID-watermarked language-model responses."
+    >
+    <meta name="theme-color" content="#f4efe5">
+    <title>The Watermark Field Test</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script
+      defer
+      src="https://sg-analytics.pikapod.net/script.js"
+      data-website-id="28fc1c5a-fc77-4fe1-af5c-a2f4b2432e1f"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to quiz</a>
+
+    <header class="masthead">
+      <div class="masthead__inner">
+        <a class="wordmark" href="./" aria-label="The Watermark Field Test, home">
+          <span class="wordmark__mark" aria-hidden="true">W</span>
+          <span>
+            <strong>The Watermark Field Test</strong>
+            <small>Human perception study · 01</small>
+          </span>
+        </a>
+        <button class="text-button" id="clear-progress" type="button" hidden>
+          Clear progress
+        </button>
+      </div>
+    </header>
+
+    <main id="app" class="site-main" tabindex="-1">
+      <section class="loading-panel" role="status" aria-label="Loading quiz">
+        <p class="eyebrow">Preparing the experiment</p>
+        <p>Loading ten prompts…</p>
+      </section>
+    </main>
+
+    <noscript>
+      <p class="noscript">
+        This quiz needs JavaScript to record answers and calculate a score.
+      </p>
+    </noscript>
+
+    <footer class="site-footer">
+      <p>
+        An informal demonstration of non-distortionary text watermarking—not a
+        statistical test of imperceptibility.
+      </p>
+    </footer>
+  </body>
+</html>
