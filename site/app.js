@@ -263,11 +263,9 @@ function renderEvidence(positions) {
   `;
 }
 
-function renderReview() {
-  const question = quiz.questions[state.current];
+function renderReviewQuestion(question, index) {
   const result = results.questions.find((item) => item.id === question.id);
   const selected = state.answers[question.id];
-  const progress = ((state.current + 1) / quiz.questions.length) * 100;
 
   const cards = question.answers
     .map((answer) => {
@@ -306,63 +304,40 @@ function renderReview() {
     })
     .join("");
 
-  app.innerHTML = `
-    <section class="quiz" aria-labelledby="review-title">
-      <header class="quiz-header">
-        <div>
-          <p class="eyebrow">Evidence review</p>
-          <h1 id="review-title">Question ${state.current + 1}</h1>
-        </div>
-        <div class="progress-copy">
-          <strong>${state.current + 1} / ${quiz.questions.length}</strong>
-          review
-        </div>
-        <div class="progress-track" aria-hidden="true">
-          <span style="width: ${progress}%"></span>
-        </div>
-      </header>
-
+  return `
+    <section class="review-question" aria-labelledby="review-question-${index}">
+      <div class="review-question__heading">
+        <h2 id="review-question-${index}">Question ${index + 1}</h2>
+        <p>
+          Your pick: ${escapeHtml(selected)} · Correct:
+          ${escapeHtml(result.correct_answer)}
+        </p>
+      </div>
       <div class="prompt-panel">
         <p>${escapeHtml(question.prompt)}</p>
       </div>
       <div class="answers-grid review-grid">${cards}</div>
-
-      <nav class="quiz-nav" aria-label="Review navigation">
-        <button class="button" id="review-previous" type="button">
-          ${
-            state.current === 0
-              ? '<span aria-hidden="true">←</span> Score'
-              : '<span aria-hidden="true">←</span> Previous'
-          }
-        </button>
-        <p class="quiz-nav__hint">
-          Your pick: ${escapeHtml(selected)} · Correct: ${escapeHtml(result.correct_answer)}
-        </p>
-        <button class="button button--primary" id="review-next" type="button">
-          ${
-            state.current === quiz.questions.length - 1
-              ? "Back to score"
-              : 'Next <span aria-hidden="true">→</span>'
-          }
-        </button>
-      </nav>
     </section>
   `;
+}
 
-  document.querySelector("#review-previous").addEventListener("click", () => {
-    if (state.current === 0) {
-      goToScorePage();
-    } else {
-      setScreen("review", state.current - 1);
-    }
-  });
-  document.querySelector("#review-next").addEventListener("click", () => {
-    if (state.current === quiz.questions.length - 1) {
-      goToScorePage();
-    } else {
-      setScreen("review", state.current + 1);
-    }
-  });
+function renderReview() {
+  const questions = quiz.questions
+    .map((question, index) => renderReviewQuestion(question, index))
+    .join("");
+
+  app.innerHTML = `
+    <section class="review-page" aria-labelledby="review-title">
+      <header class="review-page__header">
+        <div>
+          <p class="eyebrow">Evidence review</p>
+          <h1 id="review-title">Review answers</h1>
+        </div>
+        <a class="button" href="${scorePageUrl()}">Back to score</a>
+      </header>
+      ${questions}
+    </section>
+  `;
 }
 
 function showInlineError(message) {

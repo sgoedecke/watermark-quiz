@@ -134,8 +134,12 @@ class SiteDataTest(unittest.TestCase):
             "Review selections",
             "renderConfirmation",
             "The marked snippets below show three high-scoring token contexts",
+            "review-previous",
+            "review-next",
         ):
             self.assertNotIn(removed_text, app)
+        self.assertIn("renderReviewQuestion", app)
+        self.assertIn("review-page", app)
 
 
 if __name__ == "__main__":
