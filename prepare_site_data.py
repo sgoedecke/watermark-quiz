@@ -88,27 +88,11 @@ def score_page(score: int) -> str:
   </head>
   <body>
     <a class="skip-link" href="#score">Skip to score</a>
-    <header class="masthead">
-      <div class="masthead__inner">
-        <a class="wordmark" href="../" aria-label="The Watermark Field Test, home">
-          <span class="wordmark__mark" aria-hidden="true">W</span>
-          <span>
-            <strong>The Watermark Field Test</strong>
-            <small>Human perception study · 01</small>
-          </span>
-        </a>
-      </div>
-    </header>
     <main class="site-main score-route" id="score">
       <section class="score-route__panel" aria-labelledby="score-title">
         <p class="eyebrow">Your result</p>
         <p class="score-route__number">{score}<span>/10</span></p>
         <h1 id="score-title">{message}</h1>
-        <p class="score-route__copy">
-          Chance performance is 3.33 out of 10. This score describes one
-          informal set of comparisons; it does not establish whether SynthID
-          is perceptible in general.
-        </p>
         <div class="score-route__actions">
           <a class="button button--primary" href="../?review=1">
             Review answers and evidence <span aria-hidden="true">→</span>
@@ -117,12 +101,6 @@ def score_page(score: int) -> str:
         </div>
       </section>
     </main>
-    <footer class="site-footer">
-      <p>
-        An informal demonstration of non-distortionary text watermarking—not a
-        statistical test of imperceptibility.
-      </p>
-    </footer>
   </body>
 </html>
 """

@@ -105,6 +105,23 @@ class SiteDataTest(unittest.TestCase):
             self.assertIn(f"{score}<span>/10</span>", contents)
             self.assertIn(ANALYTICS_HOST, contents)
             self.assertIn('href="../?review=1"', contents)
+            self.assertNotIn("Chance performance", contents)
+            self.assertNotIn("<footer", contents)
+
+    def test_main_page_omits_removed_chrome(self):
+        contents = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn("<header", contents)
+        self.assertNotIn("<footer", contents)
+        self.assertNotIn("clear-progress", contents)
+        app = (ROOT / "site" / "app.js").read_text(encoding="utf-8")
+        for removed_text in (
+            "A blind comparison in ten rounds",
+            "Blind comparison",
+            "Choose one response to continue.",
+            "Review selections",
+            "renderConfirmation",
+        ):
+            self.assertNotIn(removed_text, app)
 
 
 if __name__ == "__main__":
