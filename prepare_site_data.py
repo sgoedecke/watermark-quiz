@@ -65,15 +65,16 @@ def sanitize_results(answer_key: dict[str, Any]) -> dict[str, Any]:
 
 
 def score_message(score: int) -> str:
-    if score >= 8:
-        return "You found a strong signal in this set of responses."
-    if score >= 5:
-        return "You identified the pattern more often than not in this set."
-    return "The marked responses were difficult to distinguish in this set."
+    if score == 10:
+        return "You guessed them all correctly, nice work"
+    if score >= 4:
+        return "You did slightly better than random chance"
+    return "You did worse than random chance"
 
 
 def score_page(score: int) -> str:
     message = score_message(score)
+    message_class = " score-route__message--low" if score <= 3 else ""
     return f"""<!doctype html>
 <html lang="en">
   <head>
@@ -92,7 +93,7 @@ def score_page(score: int) -> str:
       <section class="score-route__panel" aria-labelledby="score-title">
         <p class="eyebrow">Your result</p>
         <p class="score-route__number">{score}<span>/10</span></p>
-        <h1 id="score-title">{message}</h1>
+        <h1 class="score-route__message{message_class}" id="score-title">{message}</h1>
         <div class="score-route__actions">
           <a class="button button--primary" href="../?review=1">
             Review answers and evidence <span aria-hidden="true">→</span>

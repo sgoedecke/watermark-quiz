@@ -322,13 +322,6 @@ function renderReview() {
         </div>
       </header>
 
-      <p class="review-intro">
-        The marked snippets below show three high-scoring token contexts for
-        each response. They are aggregate keyed n-gram evidence, not visible
-        watermark marks or individually decisive words. Scores are comparative
-        diagnostics rather than calibrated probabilities.
-      </p>
-
       <div class="prompt-panel">
         <p>${escapeHtml(question.prompt)}</p>
       </div>

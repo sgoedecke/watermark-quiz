@@ -107,6 +107,19 @@ class SiteDataTest(unittest.TestCase):
             self.assertIn('href="../?review=1"', contents)
             self.assertNotIn("Chance performance", contents)
             self.assertNotIn("<footer", contents)
+            if score <= 3:
+                self.assertIn("You did worse than random chance", contents)
+                self.assertIn("score-route__message--low", contents)
+            elif score < 10:
+                self.assertIn(
+                    "You did slightly better than random chance",
+                    contents,
+                )
+            else:
+                self.assertIn(
+                    "You guessed them all correctly, nice work",
+                    contents,
+                )
 
     def test_main_page_omits_removed_chrome(self):
         contents = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
@@ -120,6 +133,7 @@ class SiteDataTest(unittest.TestCase):
             "Choose one response to continue.",
             "Review selections",
             "renderConfirmation",
+            "The marked snippets below show three high-scoring token contexts",
         ):
             self.assertNotIn(removed_text, app)
 

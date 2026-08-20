@@ -188,6 +188,10 @@ a {
   line-height: 1.08;
 }
 
+.score-route__message--low {
+  color: #b4382d;
+}
+
 .score-route__copy {
   max-width: 610px;
   margin: 1.2rem auto 0;
