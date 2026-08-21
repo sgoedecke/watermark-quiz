@@ -136,8 +136,12 @@ class SiteDataTest(unittest.TestCase):
     def test_main_page_omits_removed_chrome(self):
         contents = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
         self.assertNotIn("<header", contents)
-        self.assertNotIn("<footer", contents)
         self.assertNotIn("clear-progress", contents)
+        self.assertIn(
+            "https://www.seangoedecke.com/"
+            "readers-cant-identify-watermarked-ai-text/",
+            contents,
+        )
         app = (ROOT / "site" / "app.js").read_text(encoding="utf-8")
         for removed_text in (
             "A blind comparison in ten rounds",

@@ -58,13 +58,33 @@ a {
 
 .site-main {
   width: min(100% - 2rem, 1200px);
-  min-height: 100vh;
+  min-height: calc(100vh - 48px);
   margin: 0 auto;
   padding: clamp(2rem, 6vw, 5rem) 0;
 }
 
 .site-main:focus {
   outline: none;
+}
+
+.site-footer {
+  width: min(100% - 2rem, 1200px);
+  min-height: 48px;
+  margin: 0 auto;
+  padding: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration-color: #cccccc;
+  text-underline-offset: 0.15em;
+}
+
+.site-footer a:hover {
+  color: var(--text);
 }
 
 .loading-panel,
@@ -454,6 +474,10 @@ a {
   .site-main {
     width: min(100% - 1.25rem, 1200px);
     padding-block: 1.5rem;
+  }
+
+  .site-footer {
+    width: min(100% - 1.25rem, 1200px);
   }
 
   .display-title {
